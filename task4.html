@@ -1,0 +1,24 @@
+<!-- const obj=JSON.parse(`{"name":"xyz","age":"17","dob":"1997-03-14"}`);
+         console.log(obj.dob);
+            a = new Date(obj.dob);
+            console.log(a); -->
+<html>
+    <head>
+        <title>TASK 4</title>
+    </head>
+    <body>
+        <script>
+            const obj=JSON.parse(`{"name":"xyz","age":"17","dob":"1997-03-14"}`);
+            console.log(obj.dob);
+            a = new Date(obj.dob);
+            console.log(a);
+            function call(){
+                obj.dob=new Date(obj.Date)
+                document.getElementById("demo").innerHTML="Birth day of "+obj.name+" is "+obj.date+" (India Standard Time)"
+                // Birth day of ABC is Fri Aug 24 1990 05:30:00 GMT+0530 (India Standard Time)
+            }
+        </script>
+        <p id="demo"></p>
+        <button onclick="call()">Click Me</button>
+    </body>
+</html>
